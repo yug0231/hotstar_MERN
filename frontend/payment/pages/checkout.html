@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c3ff0c4a78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/checkout.css">
+</head>
+
+<body>
+    <!-- div#main -->
+    <div id="logo-brand">
+        <img src="../images/Logo Disney+ Hotstar.png" alt="">
+    </div>
+    <div id="payFrom">
+        <p>You're paying ₹ <span id="netP"></span> for this transaction.</p>
+    </div>
+    <div id="bankMain">
+        <div id="bankDetails">
+            <div class="payBox">
+                <input type="text" name="" id="name" required>
+                <label>Card Holder Name</label>
+            </div>
+            <div class="payBox">
+                <input type="text" name="" id="number" required>
+                <label>Card Number</label>
+            </div>
+            <div id="expCvv">
+                <div class="payBox">
+                    <input type="text" name="" id="exp" required>
+                    <label>MM/YY</label>
+                </div>
+                <div class="payBox">
+                    <i class="fa-sharp fa-solid fa-circle-question"></i>
+                    <div id="cvvDiv">
+                        <img id="cvvimg" src="../images/cvv ss.png" alt="">
+                    </div>
+                    <input type="password" name="" id="cvv" required>
+                    <label id="showcvv">CVV</label>
+                </div>
+            </div>
+            <div id="checked">
+                <input type="checkbox">
+                <p id="checkPara">I am over 18, and I agree to the above
+                    conditions and the <span>Terms of Use</span>
+                    and <span>Privacy Policy</span>.</p>
+            </div>
+            <button>START MEMBERSHIP</button>
+        </div>
+    </div>
+    <!-- <p id="dot">.........</p> -->
+</body>
+
+</html>
+<script src="../scripts/checkout.js"></script>

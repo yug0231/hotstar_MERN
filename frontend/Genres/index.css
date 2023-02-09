@@ -1,0 +1,81 @@
+#parentbox, #gen {
+    margin: auto;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2%;
+    margin-bottom: 0.5%;
+    text-align: center;
+}
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+body {
+    background-color: #121825;
+    font-family: "Roboto","HelveticaNeue-Light",sans-serif;
+}
+h1 {
+    color: #ffffffcc;
+    font: Roboto,  "HelveticaNeue-Light",sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: left;
+}
+.box:hover {
+    transform: scale(1.22);
+    transition: all 0.6s;
+}
+.box:hover > h3{
+    margin-top: -40%;
+    margin-left: 40%;
+}
+h3 {
+    color: antiquewhite;
+    font: 100% Roboto,  "HelveticaNeue-Light",sans-serif;
+    font-weight: 600;
+    margin-top: -7%;
+    margin-left: 7%;
+    opacity: 1;
+    position: absolute;
+    z-index: 9999;
+}  
+
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    #parentbox, #gen {
+        margin: auto;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        /* margin-bottom: 0.5%; */
+    }
+    h1 {
+        font-size: 100%;
+        text-align: left;
+    }
+    h3 {
+        margin-top: -15%;
+        margin-left: 18%;
+    }
+}
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width:420px){
+    #parentbox, #gen {
+        margin: auto;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        /* margin-bottom: 0.5%; */
+    }
+    h1 {
+        font-size: 100%;
+        text-align: center;
+    }
+    h3 {
+        margin-top: -32%;
+        margin-left: 35%;
+    }
+}

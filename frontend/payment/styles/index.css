@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #f5f3f3;
+}
+
+#logo-brand {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    margin-top: 12px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#logo-brand>img {
+    width: 120px;
+}
+
+#payFrom{
+    margin-top: 100px;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
+
+#payContainer {
+    /* border: 1px solid red; */
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#payContainer .payLink {
+    margin-top: 10px;
+    padding: 22px;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 58px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#payContainer .payLink img {
+    width: 32px;
+}
+
+#payContainer #net {
+    width: 16px;
+}
+
+.payLink p {
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+}
+
+#payContainer .payLink:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}

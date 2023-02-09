@@ -1,0 +1,341 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* global css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    background: #0c111b;
+    position: relative;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background: #0c111b;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+  }
+  
+  .material-icons {
+    color: #fff;
+    padding-right: 10px;
+    padding-top: 10px;
+    /* width:10px; */
+  }
+  .brand-logo {
+    /* height: 40px; */
+    font-size: 35px;
+  }
+  
+  .nav-links {
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+    gap: 5px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0.9;
+  }
+  
+  .nav-links {
+    background-color: #0f1d39;
+    margin-top: 10px;
+    border-radius: 0.5rem;
+    padding: 10px 5px;
+    box-shadow: 0 0 1.5rem 0 rgb(0 0 0 / 10%);
+    position: absolute;
+    top: 34px;
+    display: none;
+    min-width: 210px;
+    z-index: 1;
+    font-weight: 500;
+  }
+  
+  
+  
+  .nav-links2 {
+    background-color: #0f1d39;
+    margin-top: 19px;
+    border-radius: 0.5rem;
+    padding: 10px 5px;
+    box-shadow: 0 0 1.5rem 0 rgb(0 0 0 / 10%);
+    position: absolute;
+    top: 34px;
+    display: none;
+    min-width: 170px;
+    z-index: 1;
+    font-weight: 500;
+  }
+  .navlink {
+    background-color: #0f1d39;
+    margin-top: 19px;
+    border-radius: 0.5rem;
+    padding: 10px 5px;
+    box-shadow: 0 0 1.5rem 0 rgb(0 0 0 / 10%);
+    position: absolute;
+    top: 105px;
+    right: 5px;
+    display: none;
+    font-weight: 500;
+    text-align: left;
+    overflow: hidden;
+    
+    
+  }
+  
+  .login-link:hover .navlink{
+  
+    display: block;
+  }
+  .navbar > a:hover,
+  .navbar > div > a:hover {
+    border-bottom: 2px solid #335cad;
+  }
+  .navbar > div {
+    position: relative;
+    top: 5px;
+    padding: 10px;
+  }
+  
+  .navbar > div > a,
+  .navbar > a {
+    /* border: 1px solid; */
+   
+    padding: 14px 10px;
+    position: relative;
+  }
+  .nav-links > a:hover {
+    margin-left: -2px;
+    color: #335cad;
+    border-left: 2px solid #335cad;
+  }
+  
+  .nav-links2 > a:hover {
+    margin-left: -2px;
+    color: #335cad;
+    border-left: 2px solid #335cad;
+  }
+  
+  .navlink > a:hover{
+    margin-left: -2px;
+    color: #335cad;
+    border-left: 2px solid #335cad;
+  }
+  
+  
+  
+  /* 
+  .dropdown{
+    
+    border: 2px solid red;
+    color: white;
+    list-style-type: none;
+  
+  } */
+  /* 
+  .dropdown ul{
+  
+  position: absolute;
+  
+  display: flex;
+  flex-direction: column;
+  
+  list-style-type: none;
+  width: 150px;
+  background-color: #0f1d39;
+  border-radius: 5px;
+  justify-content: space-around;
+  opacity: 0;
+  pointer-events: none;
+  
+  
+  }
+  
+  .dropdown ul li{
+  
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 3%;
+  
+  
+  
+  
+  } */
+  /* 
+  .dropdown:hover ul{
+  display: block;
+  
+  
+  }
+  
+  .dropdown ul li:hover{
+  
+    background-color: #000000;
+  
+  
+  
+  } */
+  
+  .nav-links > a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  .nav-links2 > a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  .navlink > a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+   
+  }
+  
+  
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar-items-seeking:hover .nav-links-items-seeking {
+    display: block;
+  }
+  .navbar-list:hover .nav-links-items {
+    display: block;
+  }
+  
+  
+  .nav-items{
+  
+    list-style-type: none;
+    margin-top: 12px;
+    margin-left: 15px;
+    
+  }
+  .search-drop>li{
+    list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:5px 10px;
+  }
+  
+  
+  .search-drop > li:hover {
+    background-color: rgb(53, 55, 57);
+    transition: 0.8s;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .search-drop > li > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 45px;
+  }
+  
+  /* here tv movie hover part ends here */
+  
+  .right-container {
+    /* display: block; */
+    margin-left: auto;
+   margin-top:-80px;
+    /* display:flex; */
+    /* border:2px solid red; */
+    /* display: flex; */
+  }
+  
+  .search-box {
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #aaa;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s;
+  }
+  
+  .search-drop {
+    /* padding: 5px 20px; */
+    /* max-height: 280px; */
+    overflow-y: auto;
+    overflow-x: auto;
+    text-align: justify;
+    background-color: #0f1d39;
+    /* margin-top: -2px; */
+    /* border-radius: 8px; */
+    /* opacity: 0;
+      pointer-events: none; */
+    /* border:2px solid teal; */
+    position: absolute;
+    width: 300px;
+    z-index: 9;
+    /* left: 57.5%; */
+    top: 95%;
+    color: aliceblue;
+    /* padding-bottom: 5px; */
+    padding: 0px 8px;
+  }
+  
+  .search-box:focus {
+    width: 300px;
+    border-color: #1f80e0;
+  }
+  
+  .sub-btn {
+    background: #1f80e0;
+    height: 30px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+    
+  }
+  
+  .login-link {
+    color: #fff;
+    background-color:  #0c111b;;
+    border: none;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 80px;
+    text-decoration: none;
+  }

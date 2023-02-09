@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <script
+    src="https://kit.fontawesome.com/6604a6c321.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+
+  <link rel="stylesheet" href="login.css"/>
+
+  <body>
+    <button id="signup">Login</button>
+    <div id="body">
+    <div class="container">
+
+      <div class="loginbox" id="subcontainer">
+        <form id="form">
+          <div id="page">
+            <button id="xbtn">X</button>
+
+            <h1 id="label">Login to Continue</h1>
+
+            <button id="email">Have a Facebook/Email account?</button>
+
+            <p>or</p>
+
+            <div class="numberinput">
+              <span class="span1">+91</span><span class="span2">|</span>
+              <input onclick="tab2()" class="inputbox" placeholder="Enter your mobile number" />
+            </div>
+          </div>
+         
+
+          <div id="page">
+           <button onclick="arwnbtn1()" class="arrobtn"><i class="fa-solid fa-arrow-left"></i></button>
+            <button id="xbtn">X</button>
+
+            <h1 id="label2">Continue Using Phone</h1>
+           
+            <br>
+
+            <div class="numberinput">
+              <span class="span1">+91</span><span class="span2">|</span>
+              <input id="number" class="inputbox" placeholder="Enter your mobile number"/>
+            
+            </div>
+              
+              <button onclick="tab3()" id="continue">Continue <i class="fa-solid fa-chevron-right"></i></button>
+              <div id="terms">
+                  
+                  <p>By Proceeding you agree to the <span>Terms of use </span> and <span>Privacy Policy</span></p>
+                
+            </div>
+
+          </div>
+         
+          <div id="page">
+            <button onclick="arwnbtn2()" class="arrobtn"><i class="fa-solid fa-arrow-left"></i></button>
+             <button id="xbtn">X</button>
+ 
+             <p class="numb">Enter the 4-digit code sent to</p>
+             <p class="numb">+91*****<span id="lastfour"></span>   </p>
+            
+            
+             <div id="otpdiv">
+                <input type="text" id="digit1" class="otpbox" maxlength="1">
+                <input type="text" id="digit2" class="otpbox" maxlength="1">
+                <input type="text" id="digit3" class="otpbox" maxlength="1">
+                <input type="text" id="digit4" class="otpbox" maxlength="1">
+                <p>Resend Code</p>
+               </div>   
+ 
+             <button onclick="checkotp()" id="continue2">Continue <i class="fa-solid fa-chevron-right"></i></button> 
+ 
+ 
+           </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
+
+<script src="login.js"></script>
