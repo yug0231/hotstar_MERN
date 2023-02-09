@@ -14,4 +14,17 @@ userRoutes.post('/',async(req,res)=>{
     }
 })
 
+userRoutes.patch('/:id/wishlist', async(req,res)=>{
+    try{
+        let user = await User.updateOne(
+            {_id:req.params.id},
+            {$push:{
+                wishlist:req.body.wishlist
+            }})
+        res.send(user);
+    }catch{
+        console.log(err);
+    }
+})
+
 module.exports = userRoutes;
