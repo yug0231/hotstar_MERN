@@ -1,0 +1,243 @@
+/* Body part  */
+* {
+  font-family: "Roboto", "HelveticaNeue-Light", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+  #bodies {
+    display: flex;
+    position: absolute;
+    top:130px;
+    right: 350px;
+
+  
+  }
+
+  .container {
+    position: relative;
+    align-items: center;
+    padding: 20px 30px;
+    width: 520px;
+  
+  }
+  #subcontainer {
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+    background-color: #192133;
+    overflow: hidden;
+    height: 450px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+
+  .loginbox{
+
+    opacity: 0;
+    display: none;
+  }
+  .loginbox.active{
+    opacity: 1;
+    display: block;
+  }
+  #form {
+    width: 300%;
+    position: relative;
+    display: flex;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    /* margin-left: -100%; */
+    
+  }
+  #page {
+    width: 100%;
+    margin: auto;
+  
+  }
+
+  #xbtn {
+    font-size: 20px;
+    position: relative;
+    border: none;
+    background-color: #192133;
+    color: rgb(160, 158, 158);
+    font-weight: 100;
+    left:420px;
+    margin-bottom: 40px;
+  }
+  #label {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  #email {
+    width: 80%;
+    padding: 15px;
+    color: #1f80e0;
+    border: 1px solid #1f80e0;
+    background-color: #1f7fe01a;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+
+  #email ~ p {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .numberinput {
+    width: 75%;
+    padding: 15px;
+    border: 0px;
+    color: white;
+    border-bottom: 1px solid #1f80e0;
+    text-align: left;
+    background-color: #192133;
+    margin: auto; 
+  }
+
+  .span1 {
+    font-size: 17px;
+    font-weight: 300;
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: #192133;
+    border:none;
+    color: white; 
+  }
+
+  .span2 {
+    color: #1f80e0;
+    font-size: 20px;
+  }
+
+  .inputbox {
+    color: rgb(145, 142, 142);
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 10px;
+    background-color: #192133;
+    border: none;
+
+  }
+  .inputbox:focus {
+      outline: none;
+      color: white;
+    }
+    
+
+  #label2{
+      font-size: 18px;
+      font-weight: 500;
+      color: white;
+      padding-bottom: 40px;
+      margin-bottom: 20px;
+      margin-left: 60px;
+
+
+
+  }
+
+  #continue {
+      width: 75%;
+      margin-left:60px;
+      padding: 15px;
+      color: white;
+      background-color: #1f80e0;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 20px;
+
+  }
+  #terms {
+      font-size: 11px;
+      color: rgb(136, 133, 133);
+      text-align: center;
+    }
+    #terms span {
+      color: #1f80e0;
+      font-weight: 300;
+    }
+
+    .arrobtn {
+      position: absolute;
+    margin-left: 20px;
+      font-size: 25px;
+      border: none;
+      background-color: #192133;
+      color: white;
+      font-weight: 100;
+    }
+
+    
+  .numb {
+      font-size: 22px;
+      color: white;
+      margin-bottom: 10px;
+      margin-left: 60px;
+    }
+    #otpdiv {
+      display: inline-block;
+      margin-top: 40px;
+      margin-left: 65px;
+    }
+    #otpdiv p {
+      color: #1f80e0;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-top: 15px;
+
+    }
+    
+    .otpbox {
+      border: 0px;
+      border-bottom: 1px solid blue;
+      height: 40px;
+      background: transparent;
+      border-radius: 0;
+      width: 42px;
+      text-align: center;
+      font-size: 16px;
+      font-size: 16px;
+      margin-right: 18px;
+      outline: none;
+      color: white;
+      writing-mode: horizontal-tb !important;
+      text-rendering: auto;
+    
+      /* margin-bottom:20px ; */
+    }
+
+    
+    #continue2{
+      width: 75%;
+      margin-left:60px;
+      padding: 15px;
+      color: white;
+      background-color: #1f80e0;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 20px;
+
+
+    }

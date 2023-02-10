@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catstar</title>
+    <link rel="stylesheet" href="../Footer/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../NAVBARFINAL/navbar.css" />
+
+    <script
+      src="https://kit.fontawesome.com/6604a6c321.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <div id="bn-navbar"></div>
+
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="slider">
+          <div class="slider-content">
+            <div class="slider-content-top">
+              <h1 id="m-title"></h1>
+
+              <div id="top-meta">
+                <h4 style="display: flex" id="m-metadata">
+                  <p id="duration">2 hr</p>
+                  &ensp;
+                  <p>•</p>
+                  &ensp;
+                  <p id="release-date"></p>
+                  &ensp;
+                  <p>•</p>
+                  &ensp;
+                  <p id="genre"></p>
+                  &ensp;
+                  <p>•</p>
+                  &ensp;
+                  <p id="language"></p>
+                </h4>
+              </div>
+              <div id="down-meta"><p id="m-overview"></p></div>
+            </div>
+
+            <div class="slider-content-bottom">
+              <!-- <div class="play-btn"><img src="./images/play.png" alt="" /></div> -->
+              <div class="play-btn">
+                <i class="fa-sharp fa-solid fa-play fa-lg"></i>
+                <span id="span1">Watch Trailer </span>
+                <i class="fa-solid fa-plus fa-xl" id="watch"></i>
+                <i class="fa-solid fa-share-nodes fa-xl"></i>
+              </div>
+              <!-- <div class="watch"></div> -->
+            </div>
+            <div id="watchlist">
+              <span id="span2" onclick="addToWatchlist()">WATCHLIST</span>
+              <span id="span3">SHARE</span>
+            </div>
+          </div>
+          <img id="m-poster" />
+        </div>
+      </div>
+    </div>
+
+    <div id="morelike">More Like This</div>
+
+    <div class="movies-list">
+      <button class="pre-btn" title="btn">
+        <img src="./images/pre.png" alt="" />
+      </button>
+      <button class="nxt-btn" title="btn">
+        <img src="./images/nxt.png" alt="" />
+      </button>
+      <div class="card-container"></div>
+    </div>
+
+    <!-- footer section -->
+    <div id="footer-body">
+      <div class="footer-container">
+        <div class="footer1">
+          <ul>
+            <li>About Disney+ Hotstar</li>
+            <li>Terms Of Use</li>
+            <li>Privacy Policy</li>
+            <li>FAQ</li>
+            <li>Feedback</li>
+            <li>Careers</li>
+          </ul>
+
+          <p class="para-tag">
+            © 2022 STAR. All Rights Reserved.HBO, Home Box Office and all
+            related channel and programming logos are service marks of, and all
+            related programming visuals and elements are the property of, Home
+            Box Office, Inc. All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer2">
+          <p class="footer-connect">Connect with us</p>
+          <div class="footer2-sub">
+            <i class="fa-brands fa-square-facebook fa-2xl"></i>&nbsp;<i
+              class="fa-brands fa-square-twitter fa-2xl"
+            ></i>
+          </div>
+        </div>
+
+        <div class="footer3">
+          <p class="footer-connect">Disney+ Hotstar App</p>
+          <div class="footer3-sub">
+            <div>
+              <img
+                src="https://3dwarehouse.sketchup.com/warehouse/v1.0/content/public/80af2f09-7173-4b7c-867b-a0fea9e4256d"
+                alt=""
+                width="40px"
+              />
+            </div>
+            <div style="color: rgb(208, 207, 207)">
+              <i class="fa-brands fa-apple fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script
+  src="https://kit.fontawesome.com/5a398c8d78.js"
+  crossorigin="anonymous"
+></script>
+<script defer crossorigin="anonymous" src="test.js" type="module"></script>
+<script defer src="../NAVBARFINAL/navbar.js" type="module"></script>

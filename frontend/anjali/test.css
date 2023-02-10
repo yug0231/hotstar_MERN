@@ -1,0 +1,302 @@
+body {
+  background-color: #131a27;
+}
+
+.carousel-container {
+  position: relative;
+  height: 480px;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 60px;
+  overflow-x: hidden;
+}
+
+.carousel {
+  display: flex;
+  height: 100%;
+  width: 92%;
+  position: relative;
+  margin: auto;
+  background: #000;
+}
+
+.slider {
+  flex: 0 0 auto;
+  margin-right: 30px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  transition: 3s;
+  overflow: hidden;
+}
+
+.slider-content {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(to right, #030b17 70%, #0c111b00);
+  z-index: 2;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+.slider-content-top > h1 {
+  color: whitesmoke;
+  padding-left: 50px;
+  margin-top: 70px;
+}
+
+.slider-content-top > h4 {
+  color: grey;
+  padding-left: 50px;
+}
+
+.slider-content-top > p {
+  width: 80%;
+  color: silver;
+  line-height: 22.5px;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+.slider-content-bottom {
+  display: flex;
+}
+
+.watch > p {
+  color: grey;
+  padding-left: 50px;
+}
+
+.play-btn > img {
+  color: white;
+  height: 100px;
+  width: 100px;
+}
+
+.slider > img {
+  min-height: 100%;
+  width: 70%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+}
+#top-meta {
+  margin-top: 12px;
+  margin-left: 50px;
+}
+#down-meta {
+  margin-top: 25px;
+  margin-left: 50px;
+}
+#m-overview {
+  margin-top: -22px;
+}
+
+#m-metadata {
+  margin-top: -20px;
+}
+
+.play-btn {
+  color: whitesmoke;
+  padding-left: 50px;
+}
+.slider-content-bottom {
+  margin-top: 100px;
+  display: flex;
+}
+.play-btn > fa-sharp fa-solid fa-play,
+#span1 {
+  font-size: 22px;
+  font-family: "Roboto";
+  font-weight: 20px;
+  font-weight: bolder;
+}
+.slider-content-bottom > .play-btn > #span1 {
+  margin-right: 250px;
+}
+.slider-content-bottom > .play-btn > i {
+  margin-right: 30px;
+}
+#watchlist > #span2 {
+  padding-left: 460px;
+  font-size: x-small;
+  color: whitesmoke;
+  /* margin-right: 100px; */
+}
+#watchlist > #span3 {
+  font-size: x-small;
+  color: whitesmoke;
+  margin-left: 12px;
+}
+#morelike {
+  margin-left: 60px;
+  font-family: "Roboto";
+  font-weight: bolder;
+  color: whitesmoke;
+  font-size: larger;
+  margin-top: 20px;
+}
+
+#morelike {
+  color: #fff;
+  opacity: 0.9;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.movies-list {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+.card-container {
+  position: relative;
+  width: 92%;
+  padding-left: 10px;
+  height: 220px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  position: relative;
+  min-width: 150px;
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+  transition: 0.5s;
+  background: #030b17;
+  /* border-radius: 30px; */
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card-body {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+  padding: 10px;
+  transition: 0.5s;
+  margin-bottom: 100%;
+}
+
+.name {
+  color: #fff;
+  font-size: x-small;
+  font-weight: bolder;
+  text-transform: capitalize;
+  margin-top: 60%;
+  margin-bottom: 2px;
+  font-family: "Poppins", sans-serif;
+}
+
+.des {
+  color: #fff;
+  opacity: 0.8;
+  margin: 5px 0;
+  /* font-weight: 500; */
+  font-size: 8px;
+}
+
+.watchlist-btn {
+  position: relative;
+  width: 80%;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  font-weight: bolder;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 10px 2px;
+  border-radius: 5px;
+  font-size: x-small;
+  margin-bottom: -60px;
+}
+.watchlist-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  height: 30px;
+  width: 30px;
+  background-image: url(images/add.png);
+  background-size: cover;
+  transform: scale(0.4);
+}
+
+.watchlist-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+/* (pre-button & next button syntax) */
+.pre-btn,
+.nxt-btn {
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 100%;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+/* (pre and next button syntax ends here) */
+
+.pre-btn {
+  left: 0;
+  background: linear-gradient(to right, #0c111b 0%, #0c111b00);
+}
+
+.nxt-btn {
+  right: 0;
+  background: linear-gradient(to left, #0c111b 0%, #0c111b00);
+}
+
+.pre-btn img,
+.nxt-btn img {
+  width: 15px;
+  height: 20px;
+  opacity: 0;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
