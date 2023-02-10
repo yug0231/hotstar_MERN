@@ -104,21 +104,19 @@ function checkotp() {
     otp_receive[2] == digit3 &&
     otp_receive[3] == digit4
   ) {
-    alert("Login Successfull");
+    
 
     let name = document.getElementById("myInput").value;
-
-    var number = document.getElementById("number").value;
+    let number = document.getElementById("number").value;
     addDataToDB(name,number);
-    console.log("name: " + name);
     
-    let data = { name: name, number: number };
+    // let data = { name: name, number: number };
+    // alert("Login Successfull");
+    // arr.push(data);
 
-    arr.push(data);
+    // localStorage.setItem("userInfo", JSON.stringify(arr));
 
-    localStorage.setItem("userInfo", JSON.stringify(arr));
-
-    window.location.reload();
+    // window.location.reload();
   } else {
     alert("Please enter a valid OTP");
   }
@@ -209,13 +207,34 @@ function data_logout() {
   let datalog = [];
 
   localStorage.setItem("userInfo", JSON.stringify(datalog));
+  localStorage.setItem("result", JSON.stringify(datalog));
 
   window.location.reload();
 }
 
 const addDataToDB = async(name, number)=>{
   number =`${number}`
-  var result = await fetch('http://localhost:8000/user/',{
+  console.log(number);  
+  var result = await fetch('http://localhost:8000/user/getuser/',{
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name: name,
+      mobile: number
+    })
+  });
+  result = await result.json();
+  if(result.name){
+    var arr=[]
+    arr.push(result);
+    localStorage.setItem("userInfo", JSON.stringify(arr));
+    alert("Login Successfull");
+    window.location.reload();
+  }
+  else if(result.user){
+    var result = await fetch('http://localhost:8000/user/',{
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -226,5 +245,10 @@ const addDataToDB = async(name, number)=>{
     })
   });
   result = await result.json();
-  console.log(result);
+  var arr=[]
+  arr.push(result);
+  localStorage.setItem("userInfo", JSON.stringify(arr));
+  alert("Login Successfull");
+  window.location.reload();
+  }
 }

@@ -187,7 +187,6 @@ const createSlide = () => {
 
   // attaching all the elements
 
-  console.log(movies);
 
   imgElement.appendChild(document.createTextNode(""));
   h1.appendChild(document.createTextNode(movies[slideIndex].name));
