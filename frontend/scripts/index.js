@@ -266,11 +266,12 @@ cardContainers.forEach((items, i) => {
     items.scrollLeft -= containerWidth + 200;
   });
 });
-
+//addwtchlist to db
 // watchlist
 function addToWatchlist() {
   location.href = "watchlist.html";
   wishlist.push(JSON.parse(localStorage.getItem("moviename")));
+  alert("Ac")
   localStorage.setItem("wishlist", JSON.stringify(wishlist));
 }
 

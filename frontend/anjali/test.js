@@ -59,7 +59,25 @@ const display = (data) => {
 function addToWatchlist() {
   location.href = "../watchlist/watchlist.html";
   wishlist.push(JSON.parse(localStorage.getItem("moviename")));
-  localStorage.setItem("wishlist", JSON.stringify(wishlist));
+  var movie=JSON.parse(localStorage.getItem("moviename"));
+  let user =JSON.parse(localStorage.getItem("userInfo")) ||[];
+  var id =""
+  user.map(function(el){id=el._id})
+  const addwatchlist=async(req,res)=>{
+      var result = await fetch(`http://localhost:8000/user/${id}/wishlist/`,{
+        method: "PATCH",
+        headers: { 
+          "Content-Type": "application/json",
+        },body:JSON.stringify({
+          wishlist : movie
+        })
+      })
+      result=result.json();
+      res.send(result);
+  }
+  addwatchlist()
+  // localStorage.setItem("wishlist", JSON.stringify(wishlist));
+  
 }
 
 // mmovie slider js part starts from here

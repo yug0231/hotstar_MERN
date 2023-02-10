@@ -1,12 +1,30 @@
 // import addFooter from "../Footer/footer.js";
 import {addNavbar} from '../NAVBARFINAL/navbar.js'
-
-let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+const getData=async(res,req)=>{
+    let user =JSON.parse(localStorage.getItem("userInfo")) ||[];
+    var name ="";
+    var number="";
+    user.map(function(el){
+      name=el.name;
+      number=el.mobile;
+    })
+    var result = await fetch('http://localhost:8000/user/getuser/',{
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name: name,
+      mobile: number
+    })
+  });
+  result = await result.json();
+  console.log(result);
 
 function addToWatch() {
   const img_url = "https://image.tmdb.org/t/p/w200";
 
-  wishlist.map((elem, index) => {
+  result.wishlist.map((elem, index) => {
     const watch2 = document.createElement("div");
     watch2.setAttribute("class", "card");
 
@@ -37,3 +55,6 @@ function addToWatch() {
 document.getElementById("wt-navbar").innerHTML = addNavbar();
 
 addToWatch();
+
+}
+getData();
