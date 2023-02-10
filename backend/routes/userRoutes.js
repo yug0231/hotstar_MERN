@@ -1,8 +1,21 @@
 const express = require('express');
 const userRoutes = express.Router();
 const User = require("../schema/user")
-userRoutes.get('/',async(req,res)=>{
-
+userRoutes.post('/getuser',async(req,res)=>{
+    if(req.body.name && req.body.mobile){
+        try{
+            const result = await User.findOne(req.body);
+        if(result){
+            res.send(result);
+        }
+        else{
+            var data = { "user" :"not found"}
+            res.send(data);
+        }
+        }catch{
+            console.log(err);
+        }
+    }
 })
 
 userRoutes.post('/',async(req,res)=>{
